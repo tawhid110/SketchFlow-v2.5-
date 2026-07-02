@@ -1,0 +1,8 @@
+{
+  "name": "Remix: SketchFlow",
+  "description": "A modern, phone-first, responsive drawing application with a playful artsy design, MS Paint-style color picker, and modular tool panels.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

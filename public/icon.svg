@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Deep dark slate-black gradient for the background -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141B22" />
+      <stop offset="50%" stop-color="#0E1318" />
+      <stop offset="100%" stop-color="#070A0D" />
+    </linearGradient>
+
+    <!-- Pencil shaft colors -->
+    <linearGradient id="pencil-shaft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="40%" stop-color="#334155" />
+      <stop offset="70%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Soft glow behind the central graphic -->
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Beautiful high-end drop shadow for professional depth -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <!-- Background base with smooth iOS-style squircle corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bg-grad)" />
+
+  <!-- Subtle Radial Glow centered under the graphic -->
+  <circle cx="256" cy="220" r="190" fill="url(#glow)" />
+
+  <!-- Artsy dust particles / stars floating around -->
+  <circle cx="165" cy="180" r="2" fill="#38BDF8" opacity="0.5" />
+  <circle cx="150" cy="275" r="1.5" fill="#ffffff" opacity="0.3" />
+  <circle cx="345" cy="155" r="2.5" fill="#38BDF8" opacity="0.4" />
+  <circle cx="355" cy="270" r="1.5" fill="#ffffff" opacity="0.3" />
+  <circle cx="305" cy="115" r="2" fill="#38BDF8" opacity="0.6" />
+  <circle cx="210" cy="130" r="1" fill="#ffffff" opacity="0.4" />
+  <circle cx="205" cy="305" r="2" fill="#38BDF8" opacity="0.5" />
+
+  <!-- Central Graphic with Shadow -->
+  <g filter="url(#shadow)">
+    
+    <!-- White Elegant "S" - Under-Layer curves to wrap nicely -->
+    <path d="M 190 240 
+             C 140 240, 155 305, 200 305
+             C 240 305, 260 270, 280 250" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="15" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+
+    <!-- Sleek Pencil (Diagonally from top-right to bottom-left) -->
+    <!-- Rotated and positioned to match the artwork exactly -->
+    <g transform="translate(262, 218) rotate(-42)">
+      <!-- Pencil main shaft -->
+      <path d="M -16 -100 L 16 -100 L 16 45 L -16 45 Z" fill="url(#pencil-shaft)" stroke="#0E1318" stroke-width="1.5" />
+      
+      <!-- Highlights on pencil body for 3D bevel look -->
+      <rect x="-8" y="-100" width="6" height="145" fill="#ffffff" opacity="0.12" />
+      <rect x="2" y="-100" width="8" height="145" fill="#000000" opacity="0.2" />
+      
+      <!-- Collar (metallic band) -->
+      <rect x="-16" y="-100" width="32" height="14" fill="#64748B" />
+      <rect x="-16" y="-93" width="32" height="4" fill="#94A3B8" />
+
+      <!-- Eraser (rounded top tip) -->
+      <path d="M -16 -100 C -16 -114, 16 -114, 16 -100 Z" fill="#E2E8F0" opacity="0.95" />
+
+      <!-- Wood Cone (shaved tip) -->
+      <polygon points="-16,45 16,45 0,88" fill="#E2E8F0" />
+      
+      <!-- Lead Tip -->
+      <polygon points="-6,72 6,72 0,88" fill="#0F172A" />
+    </g>
+
+    <!-- White Elegant "S" - Top-Layer curve over pencil -->
+    <path d="M 235 155 
+             C 170 115, 205 230, 252 235
+             C 285 238, 295 190, 245 165" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="15" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+
+    <!-- White Elegant "F" - Loops extending out to the right -->
+    <!-- Top bar of F -->
+    <path d="M 252 205
+             C 290 190, 360 170, 360 200
+             C 360 220, 310 220, 268 228"
+          fill="none"
+          stroke="#ffffff"
+          stroke-width="15"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+
+    <!-- Crossbar of F -->
+    <path d="M 268 244
+             C 292 238, 335 238, 332 260
+             C 328 275, 305 272, 278 288"
+          fill="none"
+          stroke="#ffffff"
+          stroke-width="15"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+  </g>
+
+  <!-- "SKETCHFLOW" bold white display typography, tracked/spaced beautifully -->
+  <text x="50%" y="390" 
+        font-family="system-ui, -apple-system, 'SF Pro Display', Inter, 'Segoe UI', sans-serif" 
+        font-size="44" 
+        font-weight="800" 
+        fill="#ffffff" 
+        text-anchor="middle" 
+        letter-spacing="5">SKETCHFLOW</text>
+</svg>
